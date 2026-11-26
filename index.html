@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amirxon Xudoyberdiyev | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EAF0F6;--ink:#10233F;--mut:#4F627C;--acc:#1F5BFF;--hot:#FFB703;--card:#fff;--line:#C9D6E6}
+@media(prefers-color-scheme:dark){:root{--bg:#0F1A2C;--ink:#E7EEF8;--mut:#9FB1C9;--card:#16243B;--line:#27395A}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:17px/1.65 Onest,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:Unbounded,sans-serif;line-height:1.15}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;gap:6px;justify-content:center;padding:12px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px)}
+nav a{color:var(--ink);text-decoration:none;padding:8px 16px;border-radius:99px;font-weight:500}
+nav a:hover,nav a:focus-visible{background:var(--acc);color:#fff;outline:none}
+section{min-height:100vh;padding:100px 6vw 60px;max-width:1100px;margin:auto}
+#kirish{position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;max-width:none}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#kirish>div{position:relative;z-index:1}
+#kirish>.txt{justify-self:end;max-width:560px}
+.foto{width:min(340px,80%);aspect-ratio:1;border-radius:50% 50% 50% 8%;object-fit:cover;border:6px solid var(--hot);animation:float 6s ease-in-out infinite;justify-self:start}
+@keyframes float{50%{transform:translateY(-14px) rotate(-1.5deg)}}
+h1{font-size:clamp(2rem,5vw,3.6rem);margin-bottom:14px}
+.rol{color:var(--acc);font-weight:500;font-size:1.15rem;margin-bottom:16px;min-height:1.7em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tags span{background:var(--ink);color:var(--bg);padding:5px 14px;border-radius:99px;font-size:.9rem}
+h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:28px}
+.card{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--acc);border-radius:4px 18px 4px 18px;padding:26px;margin-bottom:20px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p,.mut{color:var(--mut)}
+form{display:grid;gap:14px;max-width:520px}
+input,textarea{font:inherit;padding:13px 15px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+input:focus,textarea:focus{outline:none;border-color:var(--acc)}
+button{font:inherit;font-weight:500;padding:14px;border:0;border-radius:10px;background:var(--acc);color:#fff;cursor:pointer}
+button:hover{background:var(--ink)}
+#holat{min-height:1.5em}
+@media(max-width:760px){#kirish{grid-template-columns:1fr}#kirish>.txt{justify-self:start}.foto{justify-self:center;order:-1}}
+@media(prefers-reduced-motion:reduce){.foto{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#kirish">Kirish</a><a href="#oqish">O'qish</a><a href="#ishlar">Ishlarim</a><a href="#aloqa">Bog'lanish</a>
+</nav>
+
+<section id="kirish">
+<canvas id="net"></canvas>
+<div class="txt">
+<h1>Xudoyberdiyev Amirxon</h1>
+<p class="rol" id="rol"></p>
+<p>Men sun'iy intellekt yo'nalishida o'qiyman. G'oyani oddiy so'z bilan yozib, uni ishlaydigan dasturga aylantirishni yaxshi ko'raman.</p>
+<div class="tags"><span>AI</span><span>Dasturlash</span><span>Loyihalash</span><span>Python</span><span>Node.js</span><span>AI vositalari</span></div>
+<p class="mut">Pastga tushib, o'qishim va ishlarim bilan tanishing.</p>
+</div>
+<div><img class="foto" src="rasm/amirxon.png" alt="Amirxon Xudoyberdiyev"></div>
+</section>
+
+<section id="oqish">
+<h2>Qayerda o'qiyman</h2>
+<div class="card">
+<h3>TerDPI</h3>
+<p>Termiz davlat pedagogika instituti. Yo'nalish: sun'iy intellekt.</p>
+</div>
+</section>
+
+<section id="ishlar">
+<h2>Qilgan ishlarim</h2>
+<div class="card">
+<h3>Shaxsiy portfolio sayti</h3>
+<p>Ko'rib turgan shu saytingiz: 4 bo'limli, animatsiyali bosh sahifa va Telegram botga ulangan aloqa formasi bilan.</p>
+</div>
+</section>
+
+<section id="aloqa">
+<h2>Bog'lanish</h2>
+<p class="mut" style="margin-bottom:12px">Xabar yozing, u to'g'ridan-to'g'ri menga Telegram orqali boradi.</p>
+<p style="margin-bottom:20px">Telegram: <a href="https://t.me/Xudoyberdiyev_Am1rxon" target="_blank" rel="noopener" style="color:var(--acc);font-weight:500">@Xudoyberdiyev_Am1rxon</a></p>
+<form id="forma">
+<input name="ism" placeholder="Ismingiz" required maxlength="60">
+<input name="aloqa" placeholder="Telefon yoki Telegram username" required maxlength="80">
+<textarea name="xabar" rows="5" placeholder="Xabaringiz" required maxlength="1000"></textarea>
+<button>Xabarni yuborish</button>
+<p id="holat" role="status"></p>
+</form>
+</section>
+
+<script>
+// Yozuv animatsiyasi
+const matn="AI talabasi · Dasturlash · Loyihalash".split(" · ");let i=0,j=0,o=false;const r=document.getElementById("rol");
+(function t(){const s=matn[i];r.textContent=s.slice(0,j)+"|";if(!o&&++j>s.length){o=true;return setTimeout(t,1400)}
+if(o&&--j<0){o=false;j=0;i=(i+1)%matn.length}setTimeout(t,o?40:90)})();
+
+// Neyron tarmoq animatsiyasi
+const c=document.getElementById("net"),x=c.getContext("2d");let W,H,P=[],m={x:-999,y:-999};
+function rs(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;P=Array.from({length:Math.min(70,W/18|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5}))}
+addEventListener("resize",rs);rs();
+c.parentElement.addEventListener("mousemove",e=>{const b=c.getBoundingClientRect();m={x:e.clientX-b.left,y:e.clientY-b.top}});
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function f(){x.clearRect(0,0,W,H);const col=getComputedStyle(document.body).getPropertyValue("--acc");x.strokeStyle=col;x.fillStyle=col;
+P.forEach((p,k)=>{if(!reduce){p.x+=p.vx;p.y+=p.vy}if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+x.globalAlpha=.7;x.beginPath();x.arc(p.x,p.y,2.5,0,7);x.fill();
+for(let q=k+1;q<P.length;q++){const d=Math.hypot(p.x-P[q].x,p.y-P[q].y);if(d<130){x.globalAlpha=(1-d/130)*.35;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(P[q].x,P[q].y);x.stroke()}}
+const dm=Math.hypot(p.x-m.x,p.y-m.y);if(dm<170){x.globalAlpha=.6;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(m.x,m.y);x.stroke()}});
+requestAnimationFrame(f)}f();
+
+// Forma
+document.getElementById("forma").addEventListener("submit",async e=>{
+e.preventDefault();const h=document.getElementById("holat");h.textContent="Yuborilmoqda...";
+try{const res=await fetch("/api/aloqa",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.fromEntries(new FormData(e.target)))});
+if(!res.ok)throw 0;h.textContent="Xabar yuborildi. Rahmat!";e.target.reset()}
+catch{h.textContent="Yuborilmadi. Server ishlayotganini tekshiring va qayta urinib ko'ring."}});
+</script>
+</body>
+</html>
